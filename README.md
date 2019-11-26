@@ -62,7 +62,7 @@ contributions that you can make are :
 * improving the web accessibility / Performance
 * and other backend works
 
-##Authors and Acknowledgment 
+## Authors and Acknowledgment 
 
 I want to say a big thank you to my colleague [youngenius](https://github.io/youngenius) for his tireless effort to see that this project was actualized, though we are still working on it to improve the functionalities....
 
@@ -70,7 +70,7 @@ I want to say a big thank you to my colleague [youngenius](https://github.io/you
 
 * MIT 
 
-##Project Status
+## Project Status
 Development of this Web is still in progress 
 
 I would say 60%...
