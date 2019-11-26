@@ -1,0 +1,18 @@
+
+$mobile: 700px;
+$desktop:1000px;
+
+
+
+
+@mixin phone() {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin largeScreen() {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

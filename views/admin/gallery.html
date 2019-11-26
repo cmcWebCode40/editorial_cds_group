@@ -1,0 +1,26 @@
+{{> mini/header}}
+<div class="admin__page ">
+    <h1 class="mt-3 bg-primary p-1">WELCOME TO ADMIN PAGE</h1>
+    {{> mini/flashmessage}}
+    {{> admin/nav}}
+
+    <div class="admin__page-gallery">
+        <div class="admin__page-gallery-create">
+            <h4 class="heading">Upload gallery </h4>
+            <div class="line"></div>
+            <form class="admin-form" action="/cdsadmin/gallery" method="post" encType="multipart/form-data">
+                <ul>
+                    <li>
+                        <input class="btn-file" type="file" name="imagefile">
+                    </li>
+                    <li><textarea class="mgs-box" name="text" cols="30" rows="10"
+                            placeholder="Write Text Here"></textarea>
+                    </li>
+                    <li><input class="btn btn-primary mt-1" type="submit" value="Insert gallery">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+{{> mini/footer}}

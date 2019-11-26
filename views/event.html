@@ -1,0 +1,57 @@
+{{> mini/header}}
+
+<div class="news__page ">
+    {{#isAdmin}}
+    <form  method="post" action="/cdsadmin/event/{{event.id}}?_method=put">
+            <input type="submit" class="btn btn-primary" value="Edit">
+    </form>
+    <form  method="post" action="/cdsadmin/event/{{event.id}}?_method=delete">
+        <input type="submit" class="btn btn-danger" value="Delete">
+    </form>
+    {{/isAdmin}}
+
+       
+    <div>
+        <h3 class="left text-primary mb-1">{{event.title}}</h3>
+    </div>
+    <div>
+        <p class=" post m-2">{{event.text}}</p>
+    </div>
+    <div class="card__body-img">
+        <img src="/img/post/{{event.scr}}" height=" 200" width="500" alt="">
+    </div>
+    <div class="card__body-footer news__page-icons">
+        <p class="events__section">
+            <i class="fas fa-comment mr-1 ">4+</i></a>
+            <i class="fas fa-thumbs-up 2x mr-1">23</i></a>
+            <i class="fas fa-thumbs-up 2x mr-1">5</i></a>
+        </p>
+    </div>
+
+    <!-- commments -->
+    <div>
+        <h1>COMMENTS</h1>
+        {{# comment}}
+            <p><b>{{name}} </b> </p>
+            <p>{{comment}} <br>{{date}} ago</p>
+        {{/ comment}}
+        {{^ comment}}
+            <p> no comment </p>
+        {{/ comment}}
+    </div>
+    
+    <div class="comment__box news__page-form ">
+        <form class=" form__card bg-light  col-sa-6 p-2" action="/event/comment/{{event.id}}" method="post">
+            <h3 class="text-center mt-1 ">Leave a Comment</h3>
+
+            <input type="hidden" name="slugTitle" value={{event.slugtitle}}>
+            <label for="">name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <label for="">comments</label>
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="type your comments here........"></textarea>
+            <input type="submit" value="submit" class="btn btn-dark mt-1">
+
+        </form>
+    </div>
+</div>
+{{> mini/footer}}

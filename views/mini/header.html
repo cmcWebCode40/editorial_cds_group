@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Saki Editorial cds Group!!</title>
+</head>
+
+<body>
+
+    <!--Header-Section---->
+    <div class="head" id="head">
+        <header class="header__section-head">
+            <div class="header__section-title mt-1">
+                <ul class="header__section-list">
+                    <a href="/">
+                        <img class="img__logo" src="http://res.cloudinary.com/cmcwebcode/image/upload/v1574528010/eds_crcmq8.svg" alt="pen world" height="30" width="30">
+                    </a>
+                    <a href="/">
+                        <span>EDITORIAL</span> CDS
+                        <span>GROUP</span>
+                    </a>
+                </ul>
+            </div>
+
+            <!--Large Screen nav-->
+
+        </header>
+
+        <nav class="navbar  mr-3">
+            <ul class="navbar__content">
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/gallery">Our Gallery</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact Us</a>
+                </li>
+                <li class="navbar__content-item">
+                    <a href="#">
+                        Member
+                        <ul>
+                            {{# isAdmin}}
+                            <li>
+                                <a href="/contact">Contact Us</a>
+                            </li> {{/ isAdmin}} {{^ isAdmin}}
+                            <li>
+                                <a href="/account/login">Login</a>
+                            </li> {{/ isAdmin}} {{# isAdmin}}
+                            <li>
+                                <a href="/cdsadmin">Admin</a>
+                            </li> {{/ isAdmin}}
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="toggle__icon">
+        <div class="toggle__icon-bars "></div>
+        <div class="toggle__icon-bars"></div>
+        <div class="toggle__icon-bars"></div>
+    </div>
+    <!----Side Nav-->
+    <div class="side__navbar ">
+        <div class="closeBtn">&times;</div>
+        <ul class="side__navbar-content">
+            <li class="side__navbar-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="side__navbar-item">
+                <a href="/about">About</a>
+            </li>
+            <li class="side__navbar-item">
+                <a href="/gallery">Our Gallery</a>
+            </li>
+            <li class="side__navbar-item">
+                <a href="/contact">Contact Us!</a>
+            </li>
+            {{# isAdmin}}
+            <li>
+                <a href="/account/logout">Logout</a>
+            </li>{{/ isAdmin}} {{^ isAdmin}}
+            <li>
+                <a href="/account/login">Login</a>
+            </li> {{/ isAdmin}} {{# isAdmin}}
+            <li>
+                <a href="/cdsadmin">Admin Dashboard</a>
+            </li> {{/ isAdmin}}
+        </ul>
+    </div>

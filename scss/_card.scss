@@ -1,0 +1,212 @@
+
+.event__card  {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &-heading {
+    display: flex;
+
+        div:nth-child(1) {
+        height: 2px;
+        width: 8rem;
+        background: $yellow-color;
+      }
+
+      div:nth-child(3) {
+      height: 2px;
+      width: 8rem;
+      background: $yellow-color;
+    }
+
+      div {
+        background: $primary-color;
+        font-size: 1.3rem;
+        color: $white-text;
+        width: 9rem;
+        text-align:center;
+        transform: skew(-30deg);
+      }
+
+
+  }
+}
+
+.card {
+  position: relative;
+  background: $white-text;
+  display: flex;  
+  flex-flow: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  color: $text-color;
+  max-height: 100%;
+  border-radius: 25px;
+
+  &__body {
+    overflow: hidden;
+    &-title {
+      h3 {
+        color: $primary-color;
+      }
+      .title {
+        text-align: left;
+      }
+
+    }
+
+    &-text {
+     text-align: center;
+     i {
+       text-decoration: underline;
+     }
+     
+    }
+
+    &-footer {
+      p {
+        display: flex;
+        flex-flow: row nowrap; 
+        justify-content: center;
+        align-items: center;
+        
+         a  i {
+          color: $primary-color;
+          margin-right: .7em;
+          font-size: 1.2rem;
+          &:hover {
+            font-size: 2rem;
+            color: $yellow-color;
+          }
+         }
+
+      }
+    }
+
+    
+  }
+}
+
+.short-word {
+  white-space: nowrap;
+ text-overflow: clip;
+  width: 400px;
+  max-height: 400px;
+  display: -webkit-box;
+  overflow: hidden;
+  --webkit-line-clamp: 10;
+  --moz-line-clamp: 10;
+  --webkit-box-orient: vertical;
+  --moz-box-orient: vertical;
+}
+
+// ? post Event .....
+ .post {
+   text-align: justify;
+   line-height: 1.5;
+   text-anchor: end;
+ }
+
+.section__b {
+  display: block;
+  background-image: linear-gradient(rgba($primary-color, 0.9),rgba($primary-color, 0.5) ),url("http://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
+ @include pictureConfig() ;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include largeScreen() {
+      grid-template-columns: .6fr .6fr .6fr;
+    }
+  }
+
+}
+
+// ? Article section 
+
+article {
+  border: 3px $yellow-color solid;
+height: inherit;
+
+  .row {
+    border: 3px $white-text solid;
+  }
+
+  h3 {
+    color: $primary-color;
+    margin: .7em 0;
+  }
+}
+
+.prevoius-news {
+  p {
+    text-align: left;
+    color: $white-text;
+    text-decoration: underline;
+    margin-bottom: .3em;
+    a {
+     
+    }
+  }
+}
+
+//? comment box 
+
+.comment__box {
+  h3 {
+    color: $primary-color;
+  }
+
+  form {
+    width: 65%;
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: .6em;
+    }
+    textarea {
+      width: 100%;
+    }
+    label {
+      color: $primary-color;
+    margin-bottom: .6em;
+    }
+  }
+}
+
+//? scroll to top
+.scroll__up {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: fixed;
+  background: $white-text;
+  left: 90%;
+  z-index: 3;
+  animation: scrollup .5s infinite;
+
+  a {
+    text-align: center;
+
+    i {
+      margin: 0 .6em;
+      
+    }
+  }
+}
+
+
+//? news page 
+
+.news__page {
+  margin: 10rem auto ;
+  text-align: center;
+  box-sizing: border-box;
+  width: 50%;
+
+  & > div {
+    margin-bottom: .3em;
+  }
+
+}

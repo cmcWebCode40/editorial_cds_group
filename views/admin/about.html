@@ -1,0 +1,18 @@
+{{> mini/header}}
+<div class="admin__page ">
+    <h1 class="mt-3 bg-primary p-1">WELCOME TO ADMIN PAGE</h1>
+    {{> mini/flashmessage}}
+    {{> admin/nav}}
+
+    <div class="admin__page-about">
+        <h4 class="admin__page-about-title heading">About page</h4>
+        <div class="line"></div>
+        <form class="admin-form" action="/cdsadmin/about?_method=put" method="POST">
+            <ul>
+                <li><textarea name="about" id="" cols="30" rows="10">{{about.about}}</textarea></li>
+                <li><input class="btn btn-primary mt-1"  type="submit" value="Update about page"></li>
+            </ul>
+        </form>
+    </div>
+</div>
+{{> mini/footer}}

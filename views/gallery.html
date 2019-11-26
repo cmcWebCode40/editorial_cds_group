@@ -1,0 +1,23 @@
+{{> mini/header}}
+<div class="gallery">
+    <div class="gallery__inner mt-5 ">
+        <h1 class="bg-primary mt-4">Our Gallery</h1>
+        <div class="gallery__inner-flex">
+            {{# gallery}}
+                <div>
+                    <a href="{{scr}}" class="image" data-lightbox="mygallery" data-title="">
+                        <img src="/img/gallery/{{scr}}" alt="" height="200" width="200">
+                    </a>
+                    <p class="text-primary">{{text}}</p>
+                    {{#isAdmin}}
+                    <form action="/cdsadmin/gallery/{{id}}?_method=delete" method="post">
+                        <input type="submit" class="btn btn-danger mt-1" value="Delete" >
+                    </form>
+                {{/isAdmin}}
+                </div>
+
+            {{/ gallery}}
+        </div>
+    </div>
+</div>
+{{> mini/footer}}

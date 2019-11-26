@@ -1,0 +1,49 @@
+{{> mini/header}}
+<!-- Contact Page Section -->
+<div class="contact__page container  text-center bg-white ">
+    <h1 class="bg-primary mt-3">Contact Us</h1>
+
+    <div class="contact__page-box">
+        <h5 class="bg-success">{{ message.success }}</h5>
+        <h5 class="bg-danger">{{ message.error }}</h5>
+        <div class="contact__page-header">
+            <h4>Saki-west Editoral & Publicity Cds Groups </h4>
+            <p> <i class="fa fa-home shift"></i>44 something st</p>
+            <p> <i class="fa fa-phone shift"></i>+234 816 508 4064</p>
+            <p><i class="fa fa-comment shift"></i>sakiwesedit@gmail.com {{# me}} {{name}} {{/ me}} </p>
+        </div>
+
+        <div class="contact__page-login">
+
+
+            <form action="/contact" method="POST">
+                <div>
+                    <label for="">Name </label>
+                    <input type="text" name="name" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="">State Code</label>
+                    <input type="text" name="stateCode" placeholder="0Y/19A/xxxx">
+                </div>
+                <div>
+                    <label for="">Email Address</label>
+                    <input type="text" name="email" placeholder="example@yahoo.com">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <input type="number" name="pnumber" placeholder="+234 8165084064">
+                </div>
+                <div>
+                    <label for="">Message</label>
+                    <textarea name="message" id="" cols="20" rows="10"
+                        placeholder="type your message here......."></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{> mini/footer}}

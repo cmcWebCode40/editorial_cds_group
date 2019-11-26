@@ -1,0 +1,17 @@
+// * keyframes 
+
+@keyframes animate {
+
+    0% {transform: scale(0);opacity: 0; transition: all 2s ease-in-out;}
+    25% {transform: scale(0.25);opacity: 0.25; transition: all 2s ease-in-out}
+    50% {transform: scale(0.50);opacity: 0.50; transition: all 2s ease-in-out}
+    75% {transform: scale(0.75);opacity: 0.75; transition: all 2s ease-in-out}
+    100%{transform: scale(1);opacity: 1; transition: all 2s ease-in-out }
+
+   
+}
+
+@keyframes scrollup {
+    from { transform: translateY(-3px); transition: all 1s ease-in-out}
+    to { transform: translateY(3px); transition: all 1s ease-in-out}
+}

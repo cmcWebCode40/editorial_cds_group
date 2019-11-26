@@ -1,0 +1,18 @@
+{{> mini/header}}
+<div class="login mt-5 ">
+    <div class="login__page ">
+        <div class="login__page-box">
+            <h5 class="color-success">{{ message.success }}</h5>
+            <h5 class="color-danger">{{ message.error }}</h5>
+            <h3 class="bg-primary m-2 text-center p-1">Login Here</h3>
+            <form class="login" action="/account/login" method="post">
+                <label for="statecode">State Code <span>*</span></label>
+                <input type="text" name="state_code" id="" placeholder="0Y/19A/000">
+                <label for="password ">PassWord <span>*</span></label>
+                <input type="password" name="password" id="">
+                <input type="submit" class="btn btn-primary mt-2 " name="login" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
+{{> mini/footer}}
