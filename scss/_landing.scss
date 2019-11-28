@@ -7,7 +7,7 @@
 
     &-cover {
         display: block;
-        background-image: linear-gradient(rgba($primary-color, 0.3),rgba($primary-color, 0.4) ),url(/img/show.JPG);
+        background-image: linear-gradient(rgba($primary-color, 0.3),rgba($primary-color, 0.4) ),url("http://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
        @include pictureConfig() ;
     
        
