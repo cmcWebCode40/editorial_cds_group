@@ -28,7 +28,7 @@
 
 .round-img {
    border-radius: 50%;
-  @include pictureConfig(200px)
+  @include pictureConfig(200px,200px)
 }
 
 .line {
