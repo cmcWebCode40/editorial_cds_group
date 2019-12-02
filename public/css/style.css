@@ -245,8 +245,12 @@ li {
 
 .round-img {
   border-radius: 50%;
+  background-repeat: no-repeat;
   height: 200px;
-  width: 200px; }
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .line {
   height: 1px;
@@ -313,10 +317,12 @@ textarea[name="message"] {
   margin: 5em auto; }
   .login__page-box .login {
     display: block; }
-  .login__page-box form label {
-    color: #008736; }
-    .login__page-box form label span {
-      color: red; }
+  .login__page-box form {
+    width: 100%; }
+    .login__page-box form label {
+      color: #008736; }
+      .login__page-box form label span {
+        color: red; }
   .login__page-box input {
     margin: .6rem 0 1rem 0; }
 
@@ -395,6 +401,11 @@ textarea[name="message"] {
       .gallery__inner-flex img {
         margin: .4em; }
 
+.event__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 .5em; }
+
 @media (min-width: 1000px) {
   .event__grid {
     display: grid;
@@ -472,15 +483,11 @@ textarea[name="message"] {
       transform: skew(-30deg); }
 
 .card {
-  position: relative;
   background: #fff;
-  display: flex;
-  flex-flow: column;
-  word-wrap: break-word;
-  background-clip: border-box;
   color: #333;
   max-height: 100%;
-  border-radius: 25px; }
+  border-radius: 25px;
+  width: auto; }
   .card__body {
     overflow: hidden; }
     .card__body-title h3 {
@@ -522,24 +529,29 @@ textarea[name="message"] {
   text-anchor: end; }
 
 .section__b {
-  display: block;
-  background-image: linear-gradient(rgba(0, 135, 54, 0.9), rgba(0, 135, 54, 0.5)), url("http://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
+  background-image: linear-gradient(rgba(0, 135, 54, 0.9), rgba(0, 135, 54, 0.5)), url("https://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  text-align: center;
+  height: 50%; }
   .section__b-grid {
     display: grid;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    margin: 0 1.5em; }
     @media (min-width: 1000px) {
       .section__b-grid {
-        grid-template-columns: .6fr .6fr .6fr; } }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0 2.4em; } }
 
 article {
   border: 3px #fffb00f6 solid;
-  height: inherit; }
+  max-height: 100%; }
   article .row {
     border: 3px #fff solid; }
   article h3 {
@@ -556,7 +568,7 @@ article {
   color: #008736; }
 
 .comment__box form {
-  width: 65%; }
+  width: 85%; }
   .comment__box form input[type="text"] {
     width: 100%;
     margin-bottom: .6em; }
@@ -623,28 +635,6 @@ article {
         right: .3%; }
       .navbar__content-item li {
         padding: .4em; }
-
-@keyframes animate {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-    transition: all 2s ease-in-out; }
-  25% {
-    transform: scale(0.25);
-    opacity: 0.25;
-    transition: all 2s ease-in-out; }
-  50% {
-    transform: scale(0.5);
-    opacity: 0.50;
-    transition: all 2s ease-in-out; }
-  75% {
-    transform: scale(0.75);
-    opacity: 0.75;
-    transition: all 2s ease-in-out; }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    transition: all 2s ease-in-out; } }
 
 @keyframes scrollup {
   from {
@@ -821,7 +811,7 @@ article {
   width: 100%; }
   .landing__page-cover {
     display: block;
-    background-image: linear-gradient(rgba(0, 135, 54, 0.3), rgba(0, 135, 54, 0.4)), url("http://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
+    background-image: linear-gradient(rgba(0, 135, 54, 0.3), rgba(0, 135, 54, 0.4)), url("https://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;

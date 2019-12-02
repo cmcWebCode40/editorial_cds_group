@@ -28,8 +28,7 @@
 
 .round-img {
    border-radius: 50%;
-   height: 200px;
-   width: 200px;
+  @include pictureConfig(200px)
 }
 
 .line {
@@ -39,8 +38,6 @@
 }
 
 //* navBar observer
-
-
 .navbar-observer {
    background: $white-text;
    box-shadow: 0px 5px 5px #ccc;

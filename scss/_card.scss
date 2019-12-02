@@ -34,15 +34,16 @@
 }
 
 .card {
-  position: relative;
+  // // position: relative;
   background: $white-text;
-  display: flex;  
-  flex-flow: column;
-  word-wrap: break-word;
-  background-clip: border-box;
+  // display: flex;  
+  // // flex-flow: column;
+  // word-wrap: break-word;
+  // background-clip: border-box;
   color: $text-color;
   max-height: 100%;
   border-radius: 25px;
+width: auto;
 
   &__body {
     overflow: hidden;
@@ -54,6 +55,16 @@
         text-align: left;
       }
 
+    }
+
+    &-img {
+      // img {
+      //  background-size: cover;
+      //  background-repeat: no-repeat;
+      //  max-height: 10%;
+      //  width: 100%;
+      // }
+      
     }
 
     &-text {
@@ -102,24 +113,33 @@
 }
 
 // ? post Event .....
- .post {
-   text-align: justify;
-   line-height: 1.5;
-   text-anchor: end;
- }
+.post {
+  text-align: justify;
+  line-height: 1.5;
+  text-anchor: end;
+}
 
 .section__b {
-  display: block;
-  background-image: linear-gradient(rgba($primary-color, 0.9),rgba($primary-color, 0.5) ),url("http://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
- @include pictureConfig() ;
+  background-image: linear-gradient(rgba($primary-color, 0.9),rgba($primary-color, 0.5) ),url("https://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
+  @include pictureConfig(100%) ;
+  text-align: center;
+  height: 50%;
 
   &-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 0 1.5em;
+
+  
+
 
     @include largeScreen() {
-      grid-template-columns: .6fr .6fr .6fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin: 0 2.4em;
     }
+ 
   }
 
 }
@@ -128,7 +148,7 @@
 
 article {
   border: 3px $yellow-color solid;
-height: inherit;
+  max-height: 100%;
 
   .row {
     border: 3px $white-text solid;
@@ -160,7 +180,7 @@ height: inherit;
   }
 
   form {
-    width: 65%;
+    width: 85%;
     input[type="text"] {
       width: 100%;
       margin-bottom: .6em;

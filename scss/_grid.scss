@@ -35,6 +35,12 @@
 
 // ?card grid
 
+.event__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 .5em;
+}
+
 @include largeScreen() {
   .event__grid {
     display: grid;
@@ -57,8 +63,3 @@
 
 
 }
-
-
-
-
-// //? footer grid display on large screen 

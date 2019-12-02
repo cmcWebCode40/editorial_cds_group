@@ -63,22 +63,17 @@ li {
 
 //? set picture position
 
-@mixin pictureConfig (
-) {
+@mixin pictureConfig($set) 
+{
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: $set;
+    width: $set;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-@mixin setImage {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 
 

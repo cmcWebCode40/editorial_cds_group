@@ -1,6 +1,7 @@
 
 $mobile: 700px;
 $desktop:1000px;
+$tablet: 823px;
 
 
 
@@ -13,6 +14,12 @@ $desktop:1000px;
 
 @mixin largeScreen() {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tab() {
+    @media (min-width: #{$tablet}) {
         @content;
     }
 }
