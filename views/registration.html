@@ -1,24 +1,24 @@
 {{> mini/header}}
 
-<div class=" login__page mt-3">
+<div class="">
+    <h5 class="color-success">{{ message.success }}</h5>
+    <h5 class="color-danger">{{ message.error }}</h5>
     <div class="login__page-box">
-        <h3 class="text-primary">SignUp Here</h3>
-        <h5 class="color-success">{{ message.success }}</h5>
-        <h5 class="color-danger">{{ message.error }}</h5>
-        
-        <form class="login" action="/account/registration" method="post">
-            <label for="state code">State Code <span>*</span></label>
-            <input type="text" id="" name="state_code" placeholder="0Y/19A/000">
-            <label for="Password">PassWord <span>*</span></label>
-            <input type="password" id="" name="password">
-            <label for="Password">Confirm PassWord <span>*</span></label>
-            <input type="password" id="" name="confirm_password">
-            <input type="submit" class="btn btn-primary mt-2" name="Register" value="Register">
-            <p>We are delighted to have here, if you are already <span class="text-primary">registered </span> please click the login button.</p>
-            <a class="text-primary" href="/account/login" id="loginlink">Login </a>
-        </form>
-    </div>
-   
+        <div class="register">
+            <h3 class="text-primary  text-center mt-1 ">SignUp Here</h3>
+            <form class="login pr2 pl-2 " action="/account/registration" method="post">
+                <label for="state code">State Code <span>*</span></label>
+                <input type="text" id="" name="state_code" placeholder="0Y/19A/000">
+                <label for="Password">PassWord <span>*</span></label>
+                <input type="password" id="" name="password">
+                <label for="Password">Confirm PassWord <span>*</span></label>
+                <input type="password" id="" name="confirm_password">
+                <input type="submit" class="btn btn-primary mt-2" name="Register" value="Register">
+                <p>We are delighted to have here, if you are already <span class="text-primary">registered </span> please click the login button.</p>
+                <a class="text-primary" href="/account/login" id="loginlink">Login </a>
+            </form>
+        </div>
+    </div>  
 </div>
 
 {{> mini/footer}}

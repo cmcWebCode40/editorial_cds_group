@@ -45,6 +45,7 @@
             color: $yellow-color;
             transform: scale(1.4);
             cursor: pointer;
+
         }
 
     }
@@ -72,11 +73,11 @@
             color: $white-text;
             padding: .7em;
             text-align: center;
-            margin-top: .4em;
+            overflow: hidden;
 
             &:hover {
             border-bottom: 1px $yellow-color solid;
-            transform: scale(1.2);
+            color:$yellow-color;
             border-bottom-width: .2px;
             }
         }

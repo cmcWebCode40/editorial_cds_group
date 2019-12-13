@@ -1,8 +1,7 @@
 {{> mini/header}}
 <!-- Contact Page Section -->
-<div class="contact__page container  text-center bg-white ">
-    <h1 class="bg-primary mt-3">Contact Us</h1>
-
+<div class="contact__page container  text-center bg-white mt-3">
+    <h1 class="bg-primary ">Contact Us</h1>
     <div class="contact__page-box">
         <h5 class="bg-success">{{ message.success }}</h5>
         <h5 class="bg-danger">{{ message.error }}</h5>
@@ -12,10 +11,7 @@
             <p> <i class="fa fa-phone shift"></i>+234 816 508 4064</p>
             <p><i class="fa fa-comment shift"></i>sakiwesedit@gmail.com {{# me}} {{name}} {{/ me}} </p>
         </div>
-
         <div class="contact__page-login">
-
-
             <form action="/contact" method="POST">
                 <div>
                     <label for="">Name </label>

@@ -32,9 +32,12 @@
         <div class="event__grid">
             <div class="event__grid-first ">
                 {{#recentNews}}
-                <div class="card m-1">
-                    <div class="card__body text-center p-2">
+                <div class="card mb-2">
+                    <div class="card__body text-center">
                         <div class="card__body-title">
+                            <div class="card__body-img">
+                                <img src="/img/post/{{scr}}"  alt="" class="news-image">
+                             </div>
                             <h3 class="left">{{title}}</h3>
                         </div>
                         <div class="card__body-text mt-1">
@@ -43,9 +46,7 @@
                                 <i class="text-primary">read more ...</i>
                             </a>
                         </div>
-                        <div class="card__body-img">
-                            <img src="/img/post/{{scr}}"  alt="" class="news-image" width="600">
-                        </div>
+                      
                         <div class="card__body-footer">
                             <p class="events__section b">
                                 <i class="fas fa-comment mr-1 ">4+</i>
@@ -82,7 +83,7 @@
         </div>
     </section>
 
-    <!---Section B---->
+    <!---Section B-->
 </div>
 <section class="section__b ">
     <div class="section__b-grid">

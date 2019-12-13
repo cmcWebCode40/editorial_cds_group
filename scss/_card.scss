@@ -34,19 +34,14 @@
 }
 
 .card {
-  // // position: relative;
   background: $white-text;
-  // display: flex;  
-  // // flex-flow: column;
-  // word-wrap: break-word;
-  // background-clip: border-box;
   color: $text-color;
   max-height: 100%;
-  border-radius: 25px;
-width: auto;
+  width: auto;
+  transition: all 1.4s ease-in-out;
 
   &__body {
-    overflow: hidden;
+
     &-title {
       h3 {
         color: $primary-color;
@@ -55,11 +50,6 @@ width: auto;
         text-align: left;
       }
 
-    }
-
-    &-img {
-  
-      
     }
 
     &-text {
@@ -80,9 +70,8 @@ width: auto;
          a  i {
           color: $primary-color;
           margin-right: .7em;
-          font-size: 1.2rem;
           &:hover {
-            font-size: 2rem;
+            font-size: 1rem;
             color: $yellow-color;
           }
          }
@@ -95,7 +84,7 @@ width: auto;
 }
 
 .news-image {
-  @include pictureConfig(20%,80%);
+  @include pictureConfig(35%,100%);
 }
 
 .short-word {
@@ -165,9 +154,7 @@ article {
     color: $white-text;
     text-decoration: underline;
     margin-bottom: .3em;
-    a {
-     
-    }
+   
   }
 }
 
@@ -219,10 +206,10 @@ article {
 //? news page 
 
 .news__page {
-  margin: 10rem auto ;
+  margin: 10rem 3rem ;
   text-align: center;
   box-sizing: border-box;
-  width: 50%;
+  width: auto;
 
   & > div {
     margin-bottom: .3em;

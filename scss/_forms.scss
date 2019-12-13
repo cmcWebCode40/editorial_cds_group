@@ -36,11 +36,9 @@ textarea[name ="message"]
 //? login page
 
 .login__page {
-
-  height: 65vh; 
   box-shadow: 0px 3px 4px 2px #ddd;
   width: 100%;
-  margin: 5em auto;
+
 
   &-box {
 
@@ -64,15 +62,25 @@ textarea[name ="message"]
   }
 }
 
+// ? Register Page 
+
+.register {
+  width: 80%;
+  box-shadow: 3px 2px 3px 2px #ccc;
+  margin: 11rem auto;
+}
+
 
 
 //? contact page 
 
 .contact__page {
-  box-shadow: 3px 2px 3px 2px #ccc;
+  box-shadow: 0px 2px 3px 4px #ccc,
+  0px 5px 3px 2px rgb(139, 139, 139);
+
   &-box {
-      margin: 1em auto;
-      width: 90%;
+    margin: 1em auto;
+    width: 90%;
       
   }
 
@@ -82,8 +90,8 @@ textarea[name ="message"]
      width: 60%;
 
      h4 {
-         font-size: 1.2em;
-         margin-bottom: .4em;
+        font-size: 1.2em;
+        margin-bottom: .4em;
      }
 
      p {

@@ -39,9 +39,12 @@
 //? About Page
 
 .about__page {
+    position: relative;
     margin: 10rem auto;
     box-shadow: 2px 2px 3px 2px #ccc;
     width: 85%;
+    animation: about 2s  forwards;
+    transition: all 1s ease-in-out;
 
 
     &-content {

@@ -23,3 +23,9 @@ $tablet: 823px;
         @content;
     }
 }
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 1rem;
+    }
+}

@@ -4,3 +4,34 @@
     from { transform: translateY(-3px); transition: all 1s ease-in-out}
     to { transform: translateY(3px); transition: all 1s ease-in-out}
 }
+
+//*****About*****//
+
+@keyframes about {
+    from {transform: translateX(1000px);
+            transition:opacity  1s ease-in-out;
+            opacity: 0;
+      
+    }
+    to {transform: translateX(0);
+         transition: opacity 1s ease-in-out;
+         opacity: 1;
+    }
+}
+
+
+//*****Card*****//
+
+@keyframes anime {
+    from {
+        transform: translateY(-100px);
+        transition: opacity 1s ease-in-out;
+          opacity: 0
+    }
+
+    to {
+    transform: translateY(-100px);
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    }
+}
