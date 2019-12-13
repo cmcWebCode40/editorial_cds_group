@@ -56,11 +56,7 @@ As i progress on my learning path i will improve this website by re-building it 
 
 it is an open source project contributions are welcome
 
-contributions that you can make are :
-* Using Webpack to bundle the files
-* add Svg animations..
-* improving the web accessibility / Performance
-* and other backend works
+
 
 ## Authors and Acknowledgment 
 
