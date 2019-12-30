@@ -11,7 +11,6 @@ router.get('/', async(req, res)=>{
     let user = new User(req, res);
 
     let me = await user.allUsers()
-    console.log(me)
     const news = new Event(req, res);
     let newsData = await news.display({orderby:"date"});
     let recentNews = newsData.slice(0,6);

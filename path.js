@@ -1,3 +1,4 @@
+const pathe = require("path");
 module.exports = path={
     home:"/",
     login:"/account/login",
@@ -9,10 +10,9 @@ module.exports = path={
     contactus:"/contact",
     event:"/event",
 
-    postFolder:"public/img/post/",
-    galleryFolder:"public/img/gallery/",
+    postFolder:pathe.join(__dirname, "public", "img", "post"),
+    galleryFolder:pathe.join(__dirname,"public", "img", "gallery"),
 
     // ADMIN
-
     adminEvent:"/cdsadmin/event",
 }

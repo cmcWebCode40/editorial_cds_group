@@ -73,7 +73,7 @@ class Gallery extends Db{
                 
         this.image = imagefile;
         let imageName = `${Math.floor(Math.random() * 1000)}${name}`;
-        this.uploadPath = `${path.galleryFolder+imageName}`
+        this.uploadPath = `${path.galleryFolder}/${imageName}`
 
         
         let result = this.validate({imagefile, mimetype, text});
