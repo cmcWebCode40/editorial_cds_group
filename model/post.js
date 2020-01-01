@@ -78,8 +78,7 @@ class Event extends Db{
 
         this.image = imagefile;
         let imageName = `${Math.floor(Math.random() * 1000)}${name}`;
-        this.uploadPath = `${path.postFolder+imageName}`
-
+        this.uploadPath = `${path.postFolder}/${imageName}`;
         
         let result = this.validate({mimetype, text, title});
         
