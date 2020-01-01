@@ -32,7 +32,7 @@
    }
 }
 
-
+// https://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg
 // ?card grid
 
 .event__grid {
@@ -45,10 +45,12 @@
   .event__grid {
     display: grid;
     grid-template-columns: 1.4fr .55fr;
+    grid-template-rows: auto;
 
     &-first {
       display: grid;
       grid-template-columns: .5fr .5fr .5fr;
+     //  grid-template-rows: .5fr .5fr .5fr;
       
     }
 

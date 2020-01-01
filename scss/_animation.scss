@@ -24,14 +24,14 @@
 
 @keyframes anime {
     from {
-        transform: translateY(-100px);
-        transition: opacity 1s ease-in-out;
+        transform: translateX(100px);
+        transition: opacity .4s ease-out;
           opacity: 0
     }
 
     to {
-    transform: translateY(-100px);
-    transition: opacity 1s ease-in-out;
+    transform: translateX(0);
+    transition: opacity .4s ease-out;
     opacity: 1;
     }
 }

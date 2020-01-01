@@ -249,8 +249,9 @@ li {
   height: 200px;
   width: 200px;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  object-fit: fill; }
 
 .line {
   height: 1px;
@@ -416,7 +417,8 @@ textarea[name="message"] {
 @media (min-width: 1000px) {
   .event__grid {
     display: grid;
-    grid-template-columns: 1.4fr .55fr; }
+    grid-template-columns: 1.4fr .55fr;
+    grid-template-rows: auto; }
     .event__grid-first {
       display: grid;
       grid-template-columns: .5fr .5fr .5fr; }
@@ -491,6 +493,7 @@ textarea[name="message"] {
 
 .card {
   background: #fff;
+  position: relative;
   color: #333;
   max-height: 100%;
   width: auto;
@@ -499,10 +502,8 @@ textarea[name="message"] {
     color: #008736; }
   .card__body-title .title {
     text-align: left; }
-  .card__body-text {
-    text-align: center; }
-    .card__body-text i {
-      text-decoration: underline; }
+  .card__body-text i {
+    text-decoration: underline; }
   .card__body-footer p {
     display: flex;
     flex-flow: row nowrap;
@@ -517,16 +518,16 @@ textarea[name="message"] {
 
 .news-image {
   background-repeat: no-repeat;
-  height: 35%;
   width: 100%;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  object-fit: fill; }
 
 .short-word {
   white-space: nowrap;
   text-overflow: clip;
-  width: 400px;
+  width: 1000px;
   max-height: 400px;
   display: -webkit-box;
   overflow: hidden;
@@ -546,8 +547,9 @@ textarea[name="message"] {
   height: 100%;
   width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
+  object-fit: fill;
   text-align: center;
   height: 50%; }
   .section__b-grid {
@@ -668,12 +670,12 @@ article {
 
 @keyframes anime {
   from {
-    transform: translateY(-100px);
-    transition: opacity 1s ease-in-out;
+    transform: translateX(100px);
+    transition: opacity .4s ease-out;
     opacity: 0; }
   to {
-    transform: translateY(-100px);
-    transition: opacity 1s ease-in-out;
+    transform: translateX(0);
+    transition: opacity .4s ease-out;
     opacity: 1; } }
 
 .table {
@@ -698,8 +700,6 @@ article {
   width: 100%;
   box-shadow: 2px 2px 6px 2px rgba(204, 204, 204, 0.945);
   padding: -4em; }
-  .head.add {
-    box-shadow: 2px 2px 6px 2px #ccc; }
 
 .header__section-head {
   float: left; }
@@ -842,13 +842,14 @@ article {
   width: 100%; }
   .landing__page-cover {
     display: block;
-    background-image: linear-gradient(rgba(0, 135, 54, 0.3), rgba(0, 135, 54, 0.4)), url("https://res.cloudinary.com/cmcwebcode/image/upload/v1573994942/show_ew1cff.jpg");
+    background-image: linear-gradient(rgba(0, 135, 54, 0.3), rgba(0, 135, 54, 0.4)), url("https://res.cloudinary.com/cmcwebcode/image/upload/v1577910764/NYSC_5_k1wu7a.png");
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     background-position: center;
-    background-size: cover;
-    background-attachment: fixed; }
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: fill; }
     .landing__page-cover-content {
       display: flex;
       flex-flow: column nowrap;

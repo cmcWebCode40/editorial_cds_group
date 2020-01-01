@@ -35,22 +35,30 @@ closeBtn.addEventListener('click', closeMenu);
 //*********Animation Using Intersection Observer*************//
 
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card-anime');
 
-cardObserver  = new IntersectionObserver(entries=>{
+cardObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
-            entry.target.style.animation =`anime 1s ease-out `
+            entry.target.style.animation = `anime 1s linear forwards ${entry.target.dataset.delay}`
         } else {
-            entry.target.style.animation =`none`
+            entry.target.style.animation = `none`
         }
     })
 })
 
-cards.forEach(card =>{
+cards.forEach(card => {
     cardObserver.observe(card)
 });
 
-console.log(`hello`);
+
+
+//  slicing the news text....
+const shortWord = document.querySelector('.short-word');
+const shortWordSplit = shortWord.innerText.split(" ");
+const outputText = ` ${shortWordSplit.slice(0, 20).join(' ')}......`;
+
+shortWord.innerText = outputText;
+
 
 
